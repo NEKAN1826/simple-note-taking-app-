@@ -1,0 +1,51 @@
+:root{
+    --noteWidth: 350px;
+    --noteHeight: calc(var(--noteWidth) * 1.3);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 35, 35);
+}
+@font-face {
+    font-family: 'corethan.regular';
+    src: url(./Resources/corethan.regular.otf);
+}
+.notebook{
+    width: var(--noteWidth);
+    height: var(--noteHeight);
+    background-image: url(./Resources/light-yellow-paper-texture-free-photo-3713129615.jpg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.notebook ul{
+    position: absolute;
+    top: 0;
+    height: calc(var(--noteHeight) * 0.95);
+    width: calc(var(--noteWidth));
+    padding: 0;
+    overflow: auto;
+    list-style-type: none;
+}
+.notebook li{
+    font-family: 'corethan.regular','Courier New', Courier, monospace;
+    font-size: 30pt;
+    padding: 0 10px;
+    border-bottom: 1.5px solid rgba(235, 78, 0, 0.751);
+    line-height: 0.7;
+}
+.input{
+    height: calc(var(--noteHeight) * 0.05);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+.input input {
+    width: calc(var(--noteWidth) - 43px);
+}
+.input button{
+    text-align: center;
+    width: 35px;
+}
