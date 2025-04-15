@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Note Taking App</title>
+</head>
+<body>
+    <ul id="notebook" class="notebook"></ul>
+    <form>
+        <label for="noteInput">Notiz</label>
+        <input type="text" id="noteInput">
+        <input type="submit" id="noteSubmit">
+    </form>
+    <p id="notebooks">Hallo</p>
+    <script src="./index.js">
+        /* document.getElementById("noteSubmit").onclick = function() {addNote};
+        function addNote(){
+            let note = document.getElementById('noteInput').value;
+            if (note != ""){
+                document.getElementById("notebook").innerHTML += `<li>${note}</li>`;
+            }
+        } */
+
+        document.getElementById("notebooks").innerHTML = "Tschüss";
+
+    </script>
+</body>
+</html>
