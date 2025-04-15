@@ -5,5 +5,6 @@ function addNote(){
         let listItem = document.createElement("li");
         listItem.innerHTML = `<li>${note}</li>`;
         document.getElementById("notebook").append(listItem);
+        document.getElementById('noteInput').value = "";
     }
 }
